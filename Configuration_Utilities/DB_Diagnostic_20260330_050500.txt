@@ -1,0 +1,712 @@
+
+================================================================================
+  FUSION EPOS – DATABASE DIAGNOSTIC REPORT
+================================================================================
+    ·  Generated : 2026-03-30 05:04:57 UTC
+    ·  INI File  : \\PL-AZ-FUSION-CO\FusionProduction\Configuration\Master_ini_config.ini
+    ·  Server    : futureworks-sdi-db.database.windows.net
+    ·  Database  : Fusion_EPOS_Production
+    ✔  Connected successfully
+
+================================================================================
+  1. SCHEMAS
+================================================================================
+    ✔  Schema exists: [RAW]
+    ✔  Schema exists: [CTL]
+    ✔  Schema exists: [INT]
+    ✔  Schema exists: [EXC]
+    ✔  Schema exists: [CFG]
+    ✔  Schema exists: [LOG]
+
+    ·  All schemas in DB: ANL, API, ARC, CFG, CTL, cur, dbo, EDI, EXC, ING, INT, LOG, RAW, STK
+
+================================================================================
+  2. ALL TABLES IN DATABASE
+================================================================================
+
+    ── Schema: [ANL]
+    ·  ANL.D365_Sales_Orders_Header   (created: 2026-02-05  modified: 2026-02-05)
+    ·  ANL.D365_Sales_Orders_Lines   (created: 2026-02-05  modified: 2026-02-05)
+    ·  ANL.SalesInvoiceHeader   (created: 2026-02-06  modified: 2026-02-06)
+    ·  ANL.SalesInvoiceLine   (created: 2026-02-06  modified: 2026-02-06)
+
+    ── Schema: [API]
+    ·  API.RawCall_SalesOrderHeader   (created: 2026-02-02  modified: 2026-02-16)
+    ·  API.RawCall_SalesOrderLine   (created: 2026-02-02  modified: 2026-02-16)
+    ·  API.SAP_TO_Post_Log   (created: 2026-02-17  modified: 2026-02-17)
+    ·  API.Transfer_Order_Header   (created: 2026-02-17  modified: 2026-02-17)
+    ·  API.Transfer_Order_Lines   (created: 2026-02-17  modified: 2026-02-17)
+
+    ── Schema: [ARC]
+    ·  ARC.SalesOrderStage   (created: 2026-03-11  modified: 2026-03-11)
+
+    ── Schema: [CFG]
+    ·  CFG.Bank_Holiday_Calendar   (created: 2026-03-30  modified: 2026-03-30)
+    ·  CFG.Calenders   (created: 2026-02-01  modified: 2026-02-17)
+    ·  CFG.Dunnes_Costcard   (created: 2026-02-01  modified: 2026-02-01)
+    ·  CFG.Dynamics_Stores   (created: 2026-02-01  modified: 2026-02-13)
+    ·  CFG.Email_Distribution   (created: 2026-02-01  modified: 2026-02-16)
+    ·  CFG.Fusion_EPOS_File_Locations   (created: 2026-02-01  modified: 2026-02-01)
+    ·  CFG.Process   (created: 2026-02-01  modified: 2026-02-02)
+    ·  CFG.Products   (created: 2026-02-01  modified: 2026-02-01)
+
+    ── Schema: [CTL]
+    ·  CTL.EPOS_Header   (created: 2026-02-01  modified: 2026-02-02)
+    ·  CTL.EPOS_Line_Item   (created: 2026-02-01  modified: 2026-02-02)
+    ·  CTL.Master_Transfer_Order_Header   (created: 2026-02-17  modified: 2026-02-17)
+    ·  CTL.Master_Transfer_Order_Line   (created: 2026-02-17  modified: 2026-02-17)
+
+    ── Schema: [cur]
+    ·  cur.FactWeeklyRetailSales   (created: 2026-02-16  modified: 2026-02-17)
+
+    ── Schema: [EDI]
+    ·  EDI.D365_Invoices   (created: 2026-02-02  modified: 2026-02-02)
+
+    ── Schema: [EXC]
+    ·  EXC.D365_Transfer_Order_Auth_Log   (created: 2026-02-17  modified: 2026-02-17)
+    ·  EXC.D365_Transfer_Order_Control   (created: 2026-02-17  modified: 2026-02-17)
+    ·  EXC.D365_Transfer_Order_Header_Log   (created: 2026-02-17  modified: 2026-02-17)
+    ·  EXC.D365_Transfer_Order_Line_Log   (created: 2026-02-17  modified: 2026-02-17)
+    ·  EXC.File_Execution_Log   (created: 2026-03-19  modified: 2026-03-19)
+    ·  EXC.PreFlight_PostLoad   (created: 2026-02-12  modified: 2026-02-12)
+    ·  EXC.Process_Steps   (created: 2026-02-11  modified: 2026-02-11)
+    ·  EXC.Process_Transaction_Log   (created: 2026-02-11  modified: 2026-02-11)
+    ·  EXC.Processed_Lines   (created: 2026-02-02  modified: 2026-02-02)
+    ·  EXC.SAP_TO_Post_Log   (created: 2026-02-17  modified: 2026-02-17)
+    ·  EXC.Script_Execution_Log   (created: 2026-03-19  modified: 2026-03-19)
+    ·  EXC.Stock_Module_ERP_Update   (created: 2026-02-12  modified: 2026-02-12)
+    ·  EXC.TransferOrder_Control   (created: 2026-02-18  modified: 2026-02-18)
+    ·  EXC.TransferOrder_InterfaceLog   (created: 2026-02-18  modified: 2026-02-18)
+
+    ── Schema: [INT]
+    ·  INT.SalesOrderStage   (created: 2026-02-02  modified: 2026-02-02)
+    ·  INT.Staged_Sales_Orders   (created: 2026-02-17  modified: 2026-02-17)
+    ·  INT.Staged_Transfer_Orders   (created: 2026-02-17  modified: 2026-02-17)
+    ·  INT.Transfer_Order_SAP_Control   (created: 2026-02-17  modified: 2026-02-17)
+    ·  INT.Transfer_Order_SAP_Header   (created: 2026-02-17  modified: 2026-02-17)
+    ·  INT.Transfer_Order_SAP_Item   (created: 2026-02-17  modified: 2026-02-17)
+    ·  INT.Transfer_Order_SAP_Note   (created: 2026-02-17  modified: 2026-02-17)
+    ·  INT.Transfer_Order_SAP_Request_Log   (created: 2026-02-17  modified: 2026-02-17)
+    ·  INT.Transfer_Order_SAP_Response_Log   (created: 2026-02-17  modified: 2026-02-17)
+    ·  INT.TransferOrderHeader   (created: 2026-02-18  modified: 2026-02-18)
+    ·  INT.TransferOrderLine   (created: 2026-02-18  modified: 2026-02-18)
+
+    ── Schema: [LOG]
+    ·  LOG.Consignment_Sales_Order_Creation_Run   (created: 2026-02-02  modified: 2026-02-02)
+    ·  LOG.Consignment_Sales_Order_Creation_Transaction   (created: 2026-02-02  modified: 2026-02-02)
+    ·  LOG.EPOS_IngestionSummary   (created: 2026-02-17  modified: 2026-02-17)
+    ·  LOG.EPOS_Load_Run   (created: 2026-02-01  modified: 2026-02-01)
+    ·  LOG.SalesOrder_Load_Run   (created: 2026-02-27  modified: 2026-02-27)
+
+    ── Schema: [RAW]
+    ·  RAW.D365_Epos_Sales_Header   (created: 2026-02-06  modified: 2026-02-06)
+    ·  RAW.D365_Epos_Sales_Lines   (created: 2026-02-06  modified: 2026-02-06)
+    ·  RAW.D365_WarehouseInventoryOnHand   (created: 2026-02-12  modified: 2026-02-12)
+    ·  RAW.EPOS_File   (created: 2026-02-01  modified: 2026-02-01)
+    ·  RAW.EPOS_FileFooter   (created: 2026-02-01  modified: 2026-02-01)
+    ·  RAW.EPOS_LineItems   (created: 2026-02-01  modified: 2026-02-16)
+    ·  RAW.EPOS_TransferRequest   (created: 2026-02-17  modified: 2026-02-18)
+    ·  RAW.Opening_Stock_SAP   (created: 2026-02-12  modified: 2026-02-12)
+    ·  RAW.SAP_Epos_Delivery_Header   (created: 2026-02-06  modified: 2026-02-06)
+    ·  RAW.SAP_Epos_Delivery_Lines   (created: 2026-02-06  modified: 2026-02-06)
+    ·  RAW.SAP_Epos_SalesOrder_Header   (created: 2026-02-06  modified: 2026-02-06)
+    ·  RAW.SAP_Epos_SalesOrder_Lines   (created: 2026-02-06  modified: 2026-02-06)
+    ·  RAW.SAP_TO_Responses   (created: 2026-02-17  modified: 2026-02-17)
+    ·  RAW.SAP_TO_Responses_Lines   (created: 2026-02-17  modified: 2026-02-17)
+    ·  RAW.WASP_Orders   (created: 2026-03-18  modified: 2026-03-18)
+
+================================================================================
+  3. TABLES OF INTEREST – DETAIL
+================================================================================
+
+  ────────────────────────────────────────────────────────────────────────────
+  RAW.SAP_TO_Responses
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 0
+
+    ── Columns
+       SAPResponseID                            bigint NOT NULL [IDENTITY]
+       FileName                                 nvarchar(260) NOT NULL
+       GoodIssueCode                            nvarchar(50) NULL
+       SalesOrderRefNumber                      nvarchar(50) NULL
+       GoodIssueRefNumber                       nvarchar(100) NOT NULL
+       ConsolidationOrderNumber                 nvarchar(50) NULL
+       RawJSON                                  nvarchar(-1) NOT NULL
+       SynProc                                  bit NOT NULL  DEFAULT=((0))
+       SynProcDate                              datetime2 NULL
+       CreatedAtUtc                             datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  RAW.SAP_TO_Responses_Lines
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 0
+
+    ── Columns
+       SAPResponseLineID                        bigint NOT NULL [IDENTITY]
+       SAPResponseID                            bigint NOT NULL
+       LineNumber                               int NULL
+       ProductNumber                            nvarchar(100) NULL
+       GoodIssuePostingDate                     nvarchar(30) NULL
+       Quantity                                 decimal NULL
+       UOM                                      nvarchar(20) NULL
+       Site                                     nvarchar(50) NULL
+       LocationNumber                           nvarchar(50) NULL
+       WarehouseNumber                          nvarchar(50) NULL
+       BatchNumber                              nvarchar(50) NULL
+       CreatedAtUtc                             datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  INT.SAP_STO_Staging
+  ────────────────────────────────────────────────────────────────────────────
+    ✘  MISSING : Table does not exist: INT.SAP_STO_Staging
+
+  ────────────────────────────────────────────────────────────────────────────
+  EXC.TransferOrder_Control
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 95
+
+    ── Columns
+       TransferControlId                        bigint NOT NULL [IDENTITY]
+       SourceID                                 nvarchar(120) NOT NULL
+       OrderId                                  nvarchar(50) NULL
+       CustomerCode                             nvarchar(50) NULL
+       ShippingWarehouseId                      nvarchar(20) NOT NULL
+       ReceivingWarehouseId                     nvarchar(20) NULL
+       RequestedShippingDate                    date NULL
+       RequestedReceiptDate                     date NULL
+       ReadyForProcessing                       bit NOT NULL  DEFAULT=((0))
+       ValidationMessage                        nvarchar(400) NULL
+       MasterStatus                             nvarchar(30) NOT NULL  DEFAULT=('NEW')
+       StatusUpdatedAt                          datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+       DynamicsDocumentNo                       nvarchar(50) NULL
+       DynamicsResponseCode                     nvarchar(50) NULL
+       DynamicsResponseMessage                  nvarchar(400) NULL
+       DynamicsResponseJson                     nvarchar(-1) NULL
+       DynamicsLastSentAt                       datetime2 NULL
+       DynamicsLastResponseAt                   datetime2 NULL
+       SapDocumentNo                            nvarchar(50) NULL
+       SapMessageId                             nvarchar(100) NULL
+       SapResponseCode                          nvarchar(50) NULL
+       SapResponseMessage                       nvarchar(400) NULL
+       SapResponseJson                          nvarchar(-1) NULL
+       SapLastSentAt                            datetime2 NULL
+       SapLastResponseAt                        datetime2 NULL
+       RetryCount                               int NOT NULL  DEFAULT=((0))
+       LastError                                nvarchar(-1) NULL
+       CreatedAt                                datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+       SapStatus                                nvarchar(30) NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  INT.TransferOrderHeader
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 95
+
+    ── Columns
+       TransferHeaderId                         bigint NOT NULL [IDENTITY]
+       TransferControlId                        bigint NOT NULL
+       SourceID                                 nvarchar(120) NOT NULL
+       ShippingWarehouseId                      nvarchar(20) NOT NULL
+       ReceivingWarehouseId                     nvarchar(20) NOT NULL
+       RequestedShippingDate                    date NOT NULL
+       RequestedReceiptDate                     date NOT NULL
+       CreatedAt                                datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  INT.TransferOrderLine
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 880
+
+    ── Columns
+       TransferLineId                           bigint NOT NULL [IDENTITY]
+       TransferControlId                        bigint NOT NULL
+       LineNo                                   int NOT NULL
+       ProductCode                              nvarchar(80) NOT NULL
+       Quantity                                 decimal NOT NULL
+       CreatedAt                                datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  RAW.EPOS_File
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 44
+
+    ── Columns
+       File_ID                                  int NOT NULL [IDENTITY]
+       FileName                                 nvarchar(255) NOT NULL
+       Region                                   nvarchar(50) NOT NULL
+       Supplier_Number                          int NOT NULL
+       Year                                     int NOT NULL
+       Week                                     int NOT NULL
+       Record_Count                             int NULL
+       Status                                   varchar(20) NOT NULL
+       Inserted_Timestamp                       datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+       Completed_Timestamp                      datetime2 NULL
+       Error_Message                            nvarchar(4000) NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  RAW.EPOS_FileFooter
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 44
+
+    ── Columns
+       Footer_ID                                int NOT NULL [IDENTITY]
+       File_ID                                  int NOT NULL
+       Footer_Text                              nvarchar(1000) NULL
+       NumberOfLines                            int NULL
+       Qty_Total                                int NULL
+       Retail_Total                             decimal NULL
+       Inserted_Timestamp                       datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  RAW.EPOS_LineItems
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 43152
+
+    ── Columns
+       LineItem_ID                              int NOT NULL [IDENTITY]
+       File_ID                                  int NOT NULL
+       Year                                     int NOT NULL
+       Day                                      int NULL
+       Region                                   nvarchar(50) NOT NULL
+       Store                                    nvarchar(40) NOT NULL
+       Store_Name                               nvarchar(255) NULL
+       Docket_Reference                         nvarchar(200) NULL
+       Retail_Barcode                           nvarchar(100) NULL
+       Dunnes_Prod_Code                         nvarchar(100) NULL
+       Product_Description                      nvarchar(255) NULL
+       Supplier                                 nvarchar(100) NULL
+       Suppl_Name                               nvarchar(255) NULL
+       Units_Sold                               int NOT NULL
+       Sales_Value_Inc_VAT                      decimal NOT NULL
+       Supplier_Product_Code                    nvarchar(200) NULL
+       Inserted_Timestamp                       datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+       SynProcessed                             bit NOT NULL  DEFAULT=((0))
+       Week                                     varchar(2) NOT NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  CTL.EPOS_Header
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 4087
+
+    ── Columns
+       EPOS_Header_ID                           bigint NOT NULL [IDENTITY]
+       EPOS_Fusion_Key                          varchar(50) NOT NULL
+       Fusion_Code                              varchar(50) NOT NULL
+       Docket_Reference                         varchar(50) NOT NULL
+       Store                                    varchar(50) NOT NULL
+       Store_Name                               varchar(200) NULL
+       Region                                   varchar(50) NULL
+       Year                                     int NOT NULL
+       Week                                     int NOT NULL
+       EPOS_Total_Units                         int NOT NULL
+       EPOS_Total_Sales                         decimal NOT NULL
+       EPOS_Line_Count                          int NOT NULL
+       Source_File_ID                           bigint NOT NULL
+       Store_Code                               varchar(50) NULL
+       Account                                  varchar(50) NULL
+       Warehouse                                varchar(50) NULL
+       Primeline_Edi_Ana                        varchar(50) NULL
+       Cust_Edi_Ana                             varchar(50) NULL
+       Del_Edi_Ana                              varchar(50) NULL
+       Sales_Order_Pool                         varchar(50) NULL
+       Created_UTC                              datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+       Integration_Status                       varchar(30) NULL
+       D365_SO_Number                           nvarchar(50) NULL
+       D365_Invoice_Number                      nvarchar(50) NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  CTL.EPOS_Line_Item
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 38358
+
+    ── Columns
+       EPOS_Line_ID                             bigint NOT NULL [IDENTITY]
+       EPOS_Fusion_Key                          varchar(50) NOT NULL
+       Source_LineItem_ID                       bigint NOT NULL
+       Source_File_ID                           bigint NOT NULL
+       Retail_Barcode                           varchar(50) NULL
+       Dunnes_Prod_Code                         varchar(50) NULL
+       Product_Description                      varchar(500) NULL
+       Units_Sold                               int NOT NULL
+       Sales_Value_Inc_VAT                      decimal NOT NULL
+       Dynamics_Code                            varchar(50) NULL
+       Created_UTC                              datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+       Integration_Status                       varchar(30) NULL
+       Invoice_Financial_Qty                    decimal NULL
+       Qty_Retail_Units                         int NULL
+       Line_Net_Amount                          decimal NULL
+       Unit_Cost                                decimal NULL
+       Net_Unit_Cost                            decimal NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  INT.SalesOrderStage
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 1522
+
+    ── Columns
+       SalesOrderStaging_ID                     int NOT NULL [IDENTITY]
+       dataAreaId                               varchar(10) NOT NULL
+       CustomersOrderReference                  varchar(50) NOT NULL
+       CustomerRequisitionNumber                varchar(50) NULL
+       OrderingCustomerAccountNumber            varchar(50) NOT NULL
+       RequestedShippingDate                    date NULL
+       ItemNumber                               varchar(50) NOT NULL
+       OrderedSalesQuantity                     decimal NOT NULL
+       SalesUnitSymbol                          varchar(10) NOT NULL
+       LineNumber                               int NOT NULL
+       LineAmount                               decimal NULL
+       LineRequestedShippingDate                date NULL
+       Integration_Status                       varchar(30) NOT NULL  DEFAULT=('Ready_to_Transmit')
+       Created_UTC                              datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+       D365_SONumber                            varchar(50) NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  INT.SalesOrderStaging
+  ────────────────────────────────────────────────────────────────────────────
+    ✘  MISSING : Table does not exist: INT.SalesOrderStaging
+
+  ────────────────────────────────────────────────────────────────────────────
+  EXC.Processed_Lines
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 530
+
+    ── Columns
+       Processed_Line_ID                        int NOT NULL [IDENTITY]
+       EPOS_Fusion_Key                          varchar(50) NOT NULL
+       EPOS_Line_ID                             int NOT NULL
+       CustomersOrderReference                  varchar(50) NOT NULL
+       ItemNumber                               varchar(50) NOT NULL
+       Original_Quantity                        decimal NOT NULL
+       Processed_Action                         varchar(20) NOT NULL
+       Reason                                   varchar(255) NOT NULL
+       Processed_UTC                            datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  EXC.Process_Transaction_Log
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 80
+
+    ── Columns
+       Log_ID                                   bigint NOT NULL [IDENTITY]
+       Run_ID                                   bigint NOT NULL
+       Txn_ID                                   bigint NULL
+       Correlation_ID                           uniqueidentifier NULL
+       System_Name                              nvarchar(100) NOT NULL
+       Environment                              nvarchar(50) NOT NULL
+       Process_Name                             nvarchar(200) NOT NULL
+       SubProcess_Name                          nvarchar(200) NULL
+       Step_Name                                nvarchar(300) NOT NULL
+       Step_Code                                nvarchar(100) NOT NULL
+       Step_Category                            nvarchar(50) NOT NULL
+       Severity_Level                           nvarchar(20) NOT NULL
+       Execution_Status                         nvarchar(20) NOT NULL
+       Rows_Read                                int NULL
+       Rows_Affected                            int NULL
+       Bytes_Processed                          bigint NULL
+       Source_Reference                         nvarchar(500) NULL
+       Reference_Number                         nvarchar(200) NULL
+       Idempotency_Key                          char(64) NULL
+       Message                                  nvarchar(2000) NULL
+       Error_Message                            nvarchar(4000) NULL
+       Details_JSON                             nvarchar(-1) NULL
+       Start_UTC                                datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+       End_UTC                                  datetime2 NULL
+       Duration_ms                              int NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  CFG.Dynamics_Stores
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 117
+
+    ── Columns
+       Account                                  nvarchar(50) NULL
+       Name                                     nvarchar(255) NULL
+       Warehouse                                nvarchar(50) NULL
+       StoreCode                                nvarchar(50) NULL
+       Account_number                           nvarchar(100) NULL
+       Invoice_account                          nvarchar(50) NULL
+       Search_name                              nvarchar(255) NULL
+       PL_Outlet                                nvarchar(50) NULL
+       Account_status                           nvarchar(50) NULL
+       Sales_order_pool                         nvarchar(50) NULL
+       Item_List                                nvarchar(50) NULL
+       Primeline_Edi_Ana                        nvarchar(100) NULL
+       Cust_Edi_ana                             nvarchar(100) NULL
+       Del_Edi_Ana                              nvarchar(100) NULL
+       Price_group                              nvarchar(100) NULL
+       Created_Timestamp                        datetime2 NOT NULL
+       SAP_Customer                             int NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  CFG.Products
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 48
+
+    ── Columns
+       Dunnes_Prod_Code                         varchar(50) NOT NULL
+       Retail_Barcode                           varchar(100) NULL
+       Product_Description                      varchar(300) NULL
+       Supplier                                 varchar(100) NULL
+       Suppl_Name                               varchar(200) NULL
+       Supplier_Product_Code                    varchar(100) NULL
+       CreatedDate                              datetime2 NULL
+       ModifiedDate                             datetime2 NULL
+       Dynamics_Code                            varchar(20) NULL
+       Retail_Size                              int NULL
+       Units_Per_Case                           int NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  CFG.Email_Distribution
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 23
+
+    ── Columns
+       EmailDistributionID                      int NOT NULL
+       Name                                     nvarchar(200) NOT NULL
+       Email                                    nvarchar(255) NOT NULL
+       Company                                  nvarchar(100) NOT NULL
+       Support                                  bit NOT NULL
+       General                                  bit NOT NULL
+       Exception                                bit NOT NULL
+       Monitoring                               bit NOT NULL
+       Weekly                                   bit NOT NULL
+       CreatedAt                                datetime2 NOT NULL
+       SynoviaTest                              bit NOT NULL  DEFAULT=((0))
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  CFG.Fusion_EPOS_File_Locations
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 16
+
+    ── Columns
+       Location_ID                              int NOT NULL
+       Location_Key                             varchar(100) NOT NULL
+       UNC_Location                             varchar(500) NOT NULL
+       IsActive                                 bit NOT NULL
+       CreatedDate                              datetime2 NOT NULL
+       CreatedBy                                varchar(100) NOT NULL
+       ModifiedDate                             datetime2 NULL
+       ModifiedBy                               varchar(100) NULL
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+  ────────────────────────────────────────────────────────────────────────────
+  LOG.EPOS_Load_Run
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS  |  Row count: 1
+
+    ── Columns
+       Run_ID                                   bigint NOT NULL [IDENTITY]
+       Process_ID                               int NULL
+       EXC_Run_ID                               bigint NULL
+       Correlation_ID                           uniqueidentifier NULL
+       Run_Start_UTC                            datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+       Run_End_UTC                              datetime2 NULL
+       Status                                   varchar(20) NOT NULL
+       Error_Message                            varchar(4000) NULL
+       Triggered_By                             varchar(100) NULL
+       Environment                              varchar(50) NULL
+       Created_UTC                              datetime2 NOT NULL  DEFAULT=(sysutcdatetime())
+    ⚠  WARN    : Could not retrieve indexes: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column "sys.indexes.index_id" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause. (8127) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+
+================================================================================
+  4. STORED PROCEDURES
+================================================================================
+    ·  Total procedures in DB: 7
+
+    ·  cur.usp_Load_FactWeeklyRetailSales   (created: 2026-02-16  modified: 2026-02-16)
+    ·  EXC.Update_Control_Table_Invoices   (created: 2026-02-02  modified: 2026-02-02)
+    ·  EXC.usp_EPOS_Generate_Weekly_Orders_Step4   (created: 2026-02-12  modified: 2026-02-12)
+    ·  EXC.usp_EPOS_Generate_Weekly_Orders_Step6   (created: 2026-02-12  modified: 2026-02-12)
+    ·  EXC.usp_Load_Transfer_Order_Request   (created: 2026-02-18  modified: 2026-02-18)
+    ·  INT.usp_Stage_SalesOrders   (created: 2026-02-02  modified: 2026-02-02)
+    ·  INT.usp_Stage_Transfer_Orders_For_SAP   (created: 2026-03-23  modified: 2026-03-23)
+
+  ────────────────────────────────────────────────────────────────────────────
+  Procedures of interest
+  ────────────────────────────────────────────────────────────────────────────
+    ✔  EXISTS: [EXC].[usp_EPOS_Generate_Weekly_Orders_Step4]
+    ✔  EXISTS: [EXC].[usp_EPOS_Generate_Weekly_Orders_Step6]
+    ✔  EXISTS: [INT].[usp_Stage_SalesOrders]
+
+================================================================================
+  5. SYNONYMS
+================================================================================
+    ✔  [EXC].[EPOS_Process_Steps]  →  [EXC].[Process_Steps]
+
+================================================================================
+  6. VIEWS
+================================================================================
+    ·  ANL.vw_D365_Sales_Orders_Header_Typed
+    ·  API.RawCall_TransferOrderHeader
+    ·  API.RawCall_TransferOrderLine
+    ·  cur.vw_Latest_StoreProductAnomalies_4W
+    ·  cur.vw_LatestWeek
+    ·  cur.vw_ProductBaselines
+    ·  cur.vw_ProductWeekly
+    ·  cur.vw_StoreAnomalies_4W
+    ·  cur.vw_StoreBaselines
+    ·  cur.vw_StoreProductAnomalies_4W
+    ·  cur.vw_StoreProductBaselines
+    ·  cur.vw_StoreProductWeekly
+    ·  cur.vw_StoreWeekly
+    ·  cur.vw_WeeklySales_Fact
+    ·  INT.SalesOrderStaging
+    ·  INT.Transfer_Order_Request
+    ·  sys.database_firewall_rules
+
+================================================================================
+  7. CONFIG + REFERENCE DATA SAMPLES
+================================================================================
+
+  ────────────────────────────────────────────────────────────────────────────
+  CFG.Fusion_EPOS_File_Locations  (up to 50 rows)
+  ────────────────────────────────────────────────────────────────────────────
+       Location_ID  Location_Key  UNC_Location  IsActive  CreatedDate  CreatedBy  ModifiedDate  ModifiedBy
+       ---------------------------------------------------------------------------------------------------
+       1            Inbound_Fold  \\PL-AZ-FUSI  True      2026-01-20   System     2026-02-01 1  System    
+       2            Duplicate_Fo  \\PL-AZ-FUSI  True      2026-01-20   System     2026-02-01 1  System    
+       3            Processed_Fo  \\PL-AZ-FUSI  True      2026-01-20   System     2026-02-01 1  System    
+       4            Error_Folder  \\PL-AZ-FUSI  True      2026-01-20   System     2026-02-01 1  System    
+       5            Reports_Fold  \\PL-AZ-FUSI  True      2026-01-20   System     2026-02-01 1  System    
+       6            Configuratio  \\PL-AZ-FUSI  True      2026-01-20   System     2026-02-01 1  System    
+       7            Dashboard_Fo  D:\Fusion_Hu  True      2026-01-20   System     2026-01-20 1  System    
+       8            Costcard_Inb  \\PL-AZ-FUSI  True      2026-01-31   System     2026-02-01 1  System    
+       9            Costcard_Pro  \\PL-AZ-FUSI  True      2026-01-31   System     2026-02-01 1  System    
+       10           Costcard_Err  \\PL-AZ-FUSI  True      2026-01-31   System     2026-02-01 1  System    
+       11           WASP_Inbound  \\PL-AZ-FUSI  True      2026-03-19   System     2026-03-19 2  System    
+       12           WASP_Process  \\PL-AZ-FUSI  True      2026-03-19   System     2026-03-19 2  System    
+       13           WASP_Error    \\PL-AZ-FUSI  True      2026-03-19   System     2026-03-19 2  System    
+       14           Transfer_Ord  \\PL-AZ-Fusi  True      2026-03-19   System     2026-03-19 2  System    
+       15           Transfer_Ord  \\PL-AZ-Fusi  True      2026-03-19   System     2026-03-19 2  System    
+       16           Transfer_Ord  \\PL-AZ-Fusi  True      2026-03-19   System     2026-03-19 2  System    
+
+  ────────────────────────────────────────────────────────────────────────────
+  CFG.Email_Distribution  (up to 20 rows)
+  ────────────────────────────────────────────────────────────────────────────
+       EmailDistributionID  Name  Email  Company  Support  General  Exception  Monitoring  Weekly  CreatedAt  SynoviaTest
+       ------------------------------------------------------------------------------------------------------------------
+       1                    Owen  owen.  Primeli  False    True     True       False       True    2026-01-2  False      
+       2                    Eric  erica  Primeli  False    True     True       False       True    2026-01-2  False      
+       3                    Sara  sarah  Primeli  False    True     True       False       True    2026-01-2  False      
+       4                    Gavi  gavin  Primeli  False    True     False      False       True    2026-01-2  False      
+       5                    Serv  servi  Primeli  True     True     False      False       True    2026-01-2  False      
+       6                    Dami  damia  Primeli  False    True     False      False       True    2026-01-2  False      
+       7                    Maev  maeve  Primeli  False    True     True       False       True    2026-01-2  False      
+       8                    Lind  linda  Primeli  False    True     False      False       True    2026-01-2  False      
+       9                    John  john.  Primeli  False    True     True       False       True    2026-01-2  False      
+       10                   Thom  thoma  Primeli  False    True     True       False       True    2026-01-2  False      
+       11                   Debb  debbi  Primeli  False    True     False      False       True    2026-01-2  False      
+       12                   Aida  aidan  Synovia  True     True     True       True        True    2026-01-2  True       
+       13                   Asha  asha.  Synovia  True     True     True       True        True    2026-01-2  False      
+       14                   Augu  augus  Synovia  True     True     True       True        True    2026-01-2  False      
+       15                   Rory  rory.  Synovia  True     True     True       True        True    2026-01-2  False      
+       16                   Anto  anton  Synovia  True     True     True       True        True    2026-01-2  True       
+       17                   Marc  marc.  Synovia  True     True     True       True        True    2026-01-2  False      
+       18                   Chri  chris  Synovia  True     True     True       True        True    2026-01-2  False      
+       19                   Vivi  vivia  Synovia  True     True     True       True        True    2026-01-2  False      
+       20                   Alan  alana  Synovia  True     True     True       True        True    2026-01-2  False      
+
+  ────────────────────────────────────────────────────────────────────────────
+  CFG.Dynamics_Stores  (up to 10 rows)
+  ────────────────────────────────────────────────────────────────────────────
+       Account  Name  Warehouse  StoreCode  Account_number  Invoice_account  Search_name  PL_Outlet  Account_status  Sales_order_pool  Item_List  Primeline_Edi_Ana  Cust_Edi_ana  Del_Edi_Ana  Price_group  Created_Timestamp  SAP_Customer
+       ------------------------------------------------------------------------------------------------------------------------
+       C010000  DS S  DSC202                HO / 3380       C01000009692     DS STH GREA  NULL       Active          JMEP              IL000013   5399990000000      539889000000  NULL         JM DS        2026-01-20 14:19:  NULL        
+       C010000  DS A  DSC352     352        352 / 3380      C01000009692     DS ARKLOW B  NULL       Active          JMEP              IL000013   5399990000000      539889000000  50998700000  JM DS        2026-01-20 14:19:  1086        
+       C010000  DS A  DSC327     327        327 / 3380      C01000009692     DS ASHBOURN  NULL       Active          JMEP              IL000013   5399990000000      539889000000  50998700000  JM DS        2026-01-20 14:19:  1126        
+       C010000  DS A  DSC304     304        304 / 3380      C01000009692     DS ATHLONE   NULL       Active          JMEP              IL000013   5399990000000      539889000000  50998700000  JM DS        2026-01-20 14:19:  1082        
+       C010000  DS A  DSC303     303        303 / 3380      C01000009692     DS ATHLONE   NULL       Active          JMEP              IL000013   5399990000000      539889000000  50998700000  JM DS        2026-01-20 14:19:  1090        
+       C010000  DS B  DSC203     203        203 / 3380      C01000009692     DS BALBRIGG  NULL       Active          JMEP              IL000013   5399990000000      539889000000  50998700000  JM DS        2026-01-20 14:19:  1125        
+       C010000  DS B  DSC501     501        501 / 3380      C01000009692     DS BALLINA   NULL       Active          JMEP              IL000013   5399990000000      539889000000  50998700000  JM DS        2026-01-20 14:19:  1108        
+       C010000  DS B  DSC417     417        417 / 3380      C01000009692     DS BALLINCO  NULL       Active          JMEP              IL000013   5399990000000      539889000000  50998700000  JM DS        2026-01-20 14:19:  878         
+       C010000  DS B  DSC401     401        401 / 3380      C01000009692     DS BALLYVOL  NULL       Active          JMEP              IL000013   5399990000000      539889000000  50998700000  JM DS        2026-01-20 14:19:  1095        
+       C010000  DS B  DSC258     258        258 / 3380      C01000009692     DS BEACON C  NULL       Active          JMEP              IL000013   5399990000000      539889000000  50998700000  JM DS        2026-01-20 14:19:  303         
+
+  ────────────────────────────────────────────────────────────────────────────
+  CFG.Products  (up to 5 rows)
+  ────────────────────────────────────────────────────────────────────────────
+       Dunnes_Prod_Code  Retail_Barcode  Product_Description  Supplier  Suppl_Name  Supplier_Product_Code  CreatedDate  ModifiedDate  Dynamics_Code  Retail_Size  Units_Per_Case
+       ------------------------------------------------------------------------------------------------------------------------
+       325867            5000394176201   DU ML PLUS AA 10KP   3380      JOHNSON BR  100008550              2026-01-30   2026-01-30 1  100008550      10           1             
+       304965            5000394803923   DURACELL LITHIUM DL  3380      JOHNSON BR  1030496500000000       2026-01-21   2026-01-21 1  100002109      2            1             
+       325873            5000394175433   DU ALK OPT AAA 8OBX  3380      JOHNSON BR  5000394175433          2026-01-21   2026-01-21 1  100008486      8            1             
+       325863            5000394176911   DU ML PLUS AAA 12KP  3380      JOHNSON BR  5000394176911          2026-01-21   2026-01-21 1  100008472      12           1             
+       325862            5000394176324   DU ML PLUS AA 12OBX  3380      JOHNSON BR  5000394176324          2026-01-21   2026-01-21 1  100008471      12           1             
+
+  ────────────────────────────────────────────────────────────────────────────
+  EXC.TransferOrder_Control  (up to 10 rows)
+  ────────────────────────────────────────────────────────────────────────────
+       TransferControlId  SourceID  OrderId  CustomerCode  ShippingWarehouseId  ReceivingWarehouseId  RequestedShippingDate  RequestedReceiptDate  ReadyForProcessing  ValidationMessage  MasterStatus  StatusUpdatedAt  DynamicsDocumentNo  DynamicsResponseCode  DynamicsResponseMessage  DynamicsResponseJson  DynamicsLastSentAt  DynamicsLastResponseAt  SapDocumentNo  SapMessageId  SapResponseCode  SapResponseMessage  SapResponseJson  SapLastSentAt  SapLastResponseAt  RetryCount  LastError  CreatedAt  SapStatus
+       ------------------------------------------------------------------------------------------------------------------------
+       1                  ORDER_10  109695   C01000009695  010                  DSC327                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036526      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:18:53     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+       2                  ORDER_10  109696   C01000009696  010                  DSC304                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036527      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:19:03     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+       3                  ORDER_10  109697   C01000009697  010                  DSC303                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036553      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:19:09     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+       4                  ORDER_10  109702   C01000009702  010                  DSC258                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036535      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:19:18     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+       5                  ORDER_10  109703   C01000009703  010                  DSC445                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036528      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:19:23     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+       6                  ORDER_10  109705   C01000009705  010                  DSC205                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036554      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:19:28     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+       7                  ORDER_10  109706   C01000009706  010                  DSC314                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036529      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:19:32     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+       8                  ORDER_10  109708   C01000009708  010                  DSC338                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036530      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:19:37     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+       9                  ORDER_10  109711   C01000009711  010                  DSC306                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036555      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:19:41     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+       10                 ORDER_10  109712   C01000009712  010                  DSC455                2026-02-18             2026-02-18            True                NULL               SENT_SAP      2026-02-18 13:5  JBRO-000036556      OK                    Header and lines create  {"TransferOrderNumbe  NULL                2026-02-18 13:19:46     NULL           NULL          Success          Sales Order data i  {"Status": 201,  NULL           2026-02-18 13:43:  0           NULL       2026-02-1  NULL     
+
+================================================================================
+  8. STAGING TABLE NAME RESOLUTION
+================================================================================
+    ·  Checking: INT.SalesOrderStage vs INT.SalesOrderStaging
+
+    ✔  INT.SalesOrderStage  EXISTS  (USER_TABLE)  rows=1522
+    ✔  INT.SalesOrderStaging  EXISTS  (VIEW)  rows=0
+
+================================================================================
+  9. RECENT AUDIT LOG ENTRIES (last 20)
+================================================================================
+    ·  [2026-02-17 12:13:08] EPOS_Generate_Weekly_Orders.Step6 | STEP6_END | SUCCESS | 0 rows | Step 6 complete. Inserted=920, Healed=0, LinesUpdated=920, HeadersUpdated=108
+    ·  [2026-02-17 12:13:07] EPOS_Generate_Weekly_Orders.Step6 | UPD_CTL_HDR | SUCCESS | 108 rows | CTL.EPOS_Header READY->SO_STAGED rows: 108
+    ·  [2026-02-17 12:13:07] EPOS_Generate_Weekly_Orders.Step6 | UPD_CTL_LNS | SUCCESS | 920 rows | CTL.EPOS_Line_Item READY->SO_STAGED rows: 920
+    ·  [2026-02-17 12:13:07] EPOS_Generate_Weekly_Orders.Step6 | INS_INT_SO | SUCCESS | 920 rows | INT.SalesOrderStage inserted rows: 920 (source aggregated rows: 920, healed staged rows: 0)
+    ·  [2026-02-17 12:13:07] EPOS_Generate_Weekly_Orders.Step6 | S6_SCOPE | SUCCESS | 0 rows | Scope resolved for Step 6
+    ·  [2026-02-17 12:13:07] EPOS_Generate_Weekly_Orders.Step6 | STEP6_START | SUCCESS | 0 rows | Step 6 started
+    ·  [2026-02-17 12:11:55] EPOS_Generate_Weekly_Orders.Step4 | UPD_HDR_STATUS | SUCCESS | 108 rows | Headers updated READY/NO_LINES: 108
+    ·  [2026-02-17 12:11:55] EPOS_Generate_Weekly_Orders.Step4 | UPD_LNS_READY | SUCCESS | 920 rows | Lines set to READY: 920
+    ·  [2026-02-17 12:11:55] EPOS_Generate_Weekly_Orders.Step4 | AGG_DUP_ITEMS | SUCCESS | 0 rows | Duplicate lines aggregated+removed: 0
+    ·  [2026-02-17 12:11:55] EPOS_Generate_Weekly_Orders.Step4 | REM_INVALID_QTY | SUCCESS | 15 rows | Invalid qty lines removed: 15
+    ·  [2026-02-17 12:11:55] EPOS_Generate_Weekly_Orders.Step4 | INS_CTL_LNS | SUCCESS | 935 rows | Inserted CTL lines: 935; RAW SynProcessed set to 1 for eligible rows (if enabled)
+    ·  [2026-02-17 12:11:55] EPOS_Generate_Weekly_Orders.Step4 | INS_CTL_HDR | SUCCESS | 108 rows | Inserted CTL headers: 108
+    ·  [2026-02-17 12:11:55] EPOS_Generate_Weekly_Orders.Step4 | CHK_STORE_MAP | SUCCESS | 0 rows | All RAW stores have CFG mappings (INT join)
+    ·  [2026-02-17 12:11:55] EPOS_Generate_Weekly_Orders.Step4 | CHK_STORE_PARSE | SUCCESS | 0 rows | All RAW.Store values cast to INT successfully
+    ·  [2026-02-17 12:11:55] EPOS_Generate_Weekly_Orders.Step4 | STEP4_START | SUCCESS | 0 rows | Step 4 started
+    ·  [2026-02-16 16:53:28] EPOS_Generate_Weekly_Orders.Step6 | STEP6_END | SUCCESS | 0 rows | Step 6 complete. Inserted=971, Healed=0, LinesUpdated=971, HeadersUpdated=107
+    ·  [2026-02-16 16:53:22] EPOS_Generate_Weekly_Orders.Step6 | UPD_CTL_HDR | SUCCESS | 107 rows | CTL.EPOS_Header READY->SO_STAGED rows: 107
+    ·  [2026-02-16 16:53:22] EPOS_Generate_Weekly_Orders.Step6 | UPD_CTL_LNS | SUCCESS | 971 rows | CTL.EPOS_Line_Item READY->SO_STAGED rows: 971
+    ·  [2026-02-16 16:53:22] EPOS_Generate_Weekly_Orders.Step6 | INS_INT_SO | SUCCESS | 971 rows | INT.SalesOrderStage inserted rows: 971 (source aggregated rows: 971, healed staged rows: 0)
+    ·  [2026-02-16 16:53:22] EPOS_Generate_Weekly_Orders.Step6 | S6_SCOPE | SUCCESS | 0 rows | Scope resolved for Step 6
+
+================================================================================
+  10. SUMMARY – OBJECTS REQUIRED FOR SAP STO INBOUND
+================================================================================
+    ✔  [TABLE] RAW.SAP_TO_Responses
+    ✔  [TABLE] RAW.SAP_TO_Responses_Lines
+    ✘  MISSING : [TABLE] INT.SAP_STO_Staging  ← NEEDS CREATING
+    ✔  [TABLE] EXC.TransferOrder_Control
+    ✔  [TABLE] INT.TransferOrderHeader
+    ✔  [TABLE] INT.TransferOrderLine
+    ✔  [TABLE] EXC.Process_Transaction_Log
+    ✔  [PROC] EXC.usp_EPOS_Generate_Weekly_Orders_Step4
+    ✔  [PROC] EXC.usp_EPOS_Generate_Weekly_Orders_Step6
+
+    ⚠  WARN    : One or more objects are missing – run SAP_STO_DDL.sql to create them.

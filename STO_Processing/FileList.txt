@@ -1,0 +1,18 @@
+Filename: 1.Load_Wasp_Order.py
+Full Path: \\pl-az-int-prd\D_Drive\Applications\Fusion_Release_4\Fusion_Duracell_EPOS\Fusion_EPOS_Production\STO_Processing\1.Load_Wasp_Order.py
+
+Filename: 2.STO_Delivery_Scheduling.py
+Full Path: \\pl-az-int-prd\D_Drive\Applications\Fusion_Release_4\Fusion_Duracell_EPOS\Fusion_EPOS_Production\STO_Processing\2.STO_Delivery_Scheduling.py
+
+Filename: 3.Stage_Transfer_Orders_D365.py
+Full Path: \\pl-az-int-prd\D_Drive\Applications\Fusion_Release_4\Fusion_Duracell_EPOS\Fusion_EPOS_Production\STO_Processing\3.Stage_Transfer_Orders_D365.py
+
+Filename: 4.Create_Dynamics_TO's.py
+Full Path: \\pl-az-int-prd\D_Drive\Applications\Fusion_Release_4\Fusion_Duracell_EPOS\Fusion_EPOS_Production\STO_Processing\4.Create_Dynamics_TO's.py
+
+Filename: 5.Run_SAP_Staging.py
+Full Path: \\pl-az-int-prd\D_Drive\Applications\Fusion_Release_4\Fusion_Duracell_EPOS\Fusion_EPOS_Production\STO_Processing\5.Run_SAP_Staging.py
+
+Filename: 6.Transmit_SAP_TO.py
+Full Path: \\pl-az-int-prd\D_Drive\Applications\Fusion_Release_4\Fusion_Duracell_EPOS\Fusion_EPOS_Production\STO_Processing\6.Transmit_SAP_TO.py
+

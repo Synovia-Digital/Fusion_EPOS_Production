@@ -1,0 +1,118 @@
+import os
+import json
+import shutil
+import pyodbc
+import configparser
+from datetime import datetime
+from pathlib import Path
+
+# ============================================
+# CONFIG
+# ============================================
+
+SOURCE_DIR = r"D:\FusionHub\Fusion_EPOS\SAP_STO_Confimrations"
+PROCESSED_DIR = os.path.join(SOURCE_DIR, "processed")
+os.makedirs(PROCESSED_DIR, exist_ok=True)
+
+INI_PATH = r"D:\Configuration\Fusion_EPOS_QAS.ini"
+cfg = configparser.ConfigParser()
+cfg.read(INI_PATH)
+
+conn_str = (
+    f"Driver={{{cfg['database']['driver']}}};"
+    f"Server={cfg['database']['server']};"
+    f"Database={cfg['database']['database']};"
+    f"UID={cfg['database']['user']};PWD={cfg['database']['password']};"
+    f"Encrypt={cfg['database']['encrypt']};"
+    f"TrustServerCertificate={cfg['database']['trust_server_certificate']};"
+)
+
+
+def insert_header(cursor, filename, header_json, raw_json):
+    sql = """
+    INSERT INTO RAW.SAP_TO_Responses
+    (FileName, GoodIssueCode, SalesOrderRefNumber, GoodIssueRefNumber,
+     ConsolidationOrderNumber, RawJSON)
+    OUTPUT INSERTED.SAPResponseID
+    VALUES (?, ?, ?, ?, ?, ?)
+    """
+    return cursor.execute(
+        sql,
+        filename,
+        header_json.get("GooodIssueCode"),
+        header_json.get("SalesOrderRefNumber"),
+        header_json.get("GoodIssueRefNumber"),
+        header_json.get("ConsolidationOrderNumber"),
+        json.dumps(raw_json),
+    ).fetchone()[0]
+
+
+def insert_line(cursor, sap_response_id, line_json):
+    sql = """
+    INSERT INTO RAW.SAP_TO_Responses_Lines
+    (SAPResponseID, LineNumber, ProductNumber, GoodIssuePostingDate,
+     Quantity, UOM, Site, LocationNumber, WarehouseNumber, BatchNumber)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """
+    cursor.execute(
+        sql,
+        sap_response_id,
+        int(line_json.get("LineNumber")),
+        line_json.get("ProductNumber"),
+        line_json.get("GoodIssuePostingDate"),
+        float(line_json.get("Quantity")),
+        line_json.get("UOM"),
+        line_json.get("Site"),
+        line_json.get("LocationNumber"),
+        line_json.get("WarehouseNumber"),
+        line_json.get("Batchnumber"),
+    )
+
+
+def already_processed(cursor, good_issue_ref):
+    sql = "SELECT COUNT(*) FROM RAW.SAP_TO_Responses WHERE GoodIssueRefNumber = ?"
+    return cursor.execute(sql, good_issue_ref).fetchone()[0] > 0
+
+
+def process_file(path):
+    filename = os.path.basename(path)
+
+    with open(path, "r", encoding="utf-8") as f:
+        raw_json = json.load(f)
+
+    entry = raw_json["request"][0]  # payload root
+
+    good_issue_ref = entry.get("GoodIssueRefNumber")
+
+    with pyodbc.connect(conn_str) as conn:
+        cursor = conn.cursor()
+
+        # Skip duplicates
+        if already_processed(cursor, good_issue_ref):
+            print(f"Skipping duplicate GoodIssueRefNumber {good_issue_ref}")
+            shutil.move(path, os.path.join(PROCESSED_DIR, filename))
+            return
+
+        # Insert header
+        sap_response_id = insert_header(cursor, filename, entry, raw_json)
+
+        # Insert lines
+        for line in entry["SalesOrderLine"]:
+            insert_line(cursor, sap_response_id, line)
+
+        conn.commit()
+
+    # Move file to processed folder
+    shutil.move(path, os.path.join(PROCESSED_DIR, filename))
+    print(f"Processed + moved {filename}")
+
+
+def main():
+    for file in os.listdir(SOURCE_DIR):
+        if file.lower().endswith(".json"):
+            full_path = os.path.join(SOURCE_DIR, file)
+            process_file(full_path)
+
+
+if __name__ == "__main__":
+    main()
