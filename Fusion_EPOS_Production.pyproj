@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>12b15ff0-f118-4bd7-a950-09295474caa2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Reporting\Report_Duracell_Daily.py</StartupFile>
+    <StartupFile>Fusion_EPOS_Production.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,59 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Configuration_Utilities\Avon_%293.py" />
     <Compile Include="Configuration_Utilities\export_stored_procedures.py" />
     <Compile Include="Configuration_Utilities\load_bank_holidays.py" />
-    <Compile Include="Configuration_Utilities\DB_Diagnostic.py" />
-    <Compile Include="Development_Scripts\Blank.py" />
-    <Compile Include="Reporting\Report_End_of_Day - Copy.py" />
-    <Compile Include="Reporting\Report_STO_Operations.py" />
-    <Compile Include="Reporting\reporting_shared.py" />
-    <Compile Include="Reporting\Report_Day_Update.py" />
-    <Compile Include="Reporting\Report_Duracell_Daily.py" />
-    <Compile Include="Reporting\Report_End_of_Day.py" />
-    <Compile Include="Reporting\Report_Weekly.py" />
-    <Compile Include="Sales_Order_Processing\1.Load_Wasp_Order.py" />
-    <Compile Include="Sales_Order_Processing\EPOS_File_Master_Loader.py" />
-    <Compile Include="Sales_Order_Processing\Fusion_EPOS_WASP_OrderProcessor.py" />
-    <Compile Include="Sales_Order_Processing\Generate_D365_To.py" />
-    <Compile Include="Sales_Order_Processing\PreFlight_Processing.py" />
-    <Compile Include="Sales_Order_Processing\PreFlight_Status_Update.py" />
-    <Compile Include="Sales_Order_Processing\Process_Consignment_Orders.py" />
-    <Compile Include="Sales_Order_Processing\Reporting_Email - Copy.py" />
-    <Compile Include="Sales_Order_Processing\Reporting_Email.py" />
-    <Compile Include="Sales_Order_Processing\Restore_And_Reconcile.py" />
-    <Compile Include="Sales_Order_Processing\SAP_STO_Inbound_Loader - Copy.py" />
-    <Compile Include="Sales_Order_Processing\SAP_STO_Inbound_Loader.py" />
-    <Compile Include="Sales_Order_Processing\Step10_PostOrderChecks.py" />
-    <Compile Include="Sales_Order_Processing\Step4_ProcessStage_Orders.py" />
-    <Compile Include="Sales_Order_Processing\Step5_Confirm_Weekly_Orders.py" />
-    <Compile Include="Sales_Order_Processing\Step6_Stage_SalesOrders.py" />
-    <Compile Include="Sales_Order_Processing\Step7_PreOrdersCreationChecks.py" />
-    <Compile Include="Sales_Order_Processing\Step8_Create_D365_Orders.py" />
-    <Compile Include="Sales_Order_Processing\STO_Delivery_Scheduling.py" />
-    <Compile Include="Sales_Order_Processing\Transmit_TO_SAP.py" />
-    <Compile Include="Sales_Order_Processing\_fusion_shared.py" />
-    <Compile Include="STO_Processing\1.Load_Wasp_Order.py" />
-    <Compile Include="Development_Scripts\Depreciated\Fusion_EPOS_WASP_OrderProcessor.py" />
-    <Compile Include="Development_Scripts\Depreciated\Generate_D365_To.py" />
-    <Compile Include="STO_Processing\2.STO_Delivery_Scheduling.py" />
-    <Compile Include="Development_Scripts\Depreciated\Restore_And_Reconcile.py" />
-    <Compile Include="STO_Processing\3.Stage_Transfer_Orders_D365.py" />
-    <Compile Include="STO_Processing\5.Run_SAP_Staging.py" />
-    <Compile Include="STO_Processing\4.Create_Dynamics_TO%27s.py" />
-    <Compile Include="STO_Processing\6.Transmit_SAP_TO.py" />
-    <Compile Include="Development_Scripts\Depreciated\SAP_STO_Inbound_Loader - Copy %286%29.py" />
-    <Compile Include="Development_Scripts\Depreciated\SAP_STO_Inbound_Loader - Copy %287%29.py" />
-    <Compile Include="Development_Scripts\Depreciated\SAP_STO_Inbound_Loader - Copy.py" />
-    <Compile Include="Development_Scripts\Depreciated\SAP_STO_Inbound_Loader.py" />
-    <Compile Include="Development_Scripts\Depreciated\Process_EPOS_Sales_Invoice_Backlog.py" />
-    <Compile Include="STO_Processing\STO_Orchestrator.py" />
+    <Compile Include="Fusion_EPOS_Production.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Development_Scripts\Depreciated\" />
     <Folder Include="Reporting\" />
-    <Folder Include="Development_Scripts\" />
     <Folder Include="STO_Processing\" />
     <Folder Include="Sales_Order_Processing\" />
     <Folder Include="SQL\" />
